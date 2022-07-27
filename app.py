@@ -30,7 +30,7 @@ if selected_page == "Data Distribution":
     df = pd.read_excel(excel_file,
                    sheet_name=sheet_name,
                    usecols='B:AA',
-                   header=1)
+                   header=1,engine='openpyxl')
 
 #st.set_page_config(page_title='Data Distribution')
 
@@ -104,7 +104,7 @@ if selected_page == "Filter by Base, T, Operating Conditions":
     df = pd.read_excel(excel_file,
                        sheet_name=sheet_name,
                        usecols='B:AA',
-                       header=1)
+                       header=1, engine='openpyxl')
 
     # st.set_page_config(page_title='Data Distribution')
 
